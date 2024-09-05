@@ -1,0 +1,10 @@
+(librepcb_component_category a2ccdaed-a530-4877-a30e-6d61acd8af5d
+ (name "IC")
+ (description "Surface mount ICs")
+ (keywords "SMD,IC")
+ (author "bim bom")
+ (version "0.1")
+ (created 2024-07-23T07:49:41Z)
+ (deprecated false)
+ (parent none)
+)

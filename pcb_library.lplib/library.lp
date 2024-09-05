@@ -1,0 +1,11 @@
+(librepcb_library 0ffad99d-5e5b-47d1-86c7-ad4a391cbd55
+ (name "pcb_library")
+ (description "Components")
+ (keywords "")
+ (author "bim bom")
+ (version "0.1")
+ (created 2024-07-23T07:47:02Z)
+ (deprecated false)
+ (url "")
+ (manufacturer "")
+)

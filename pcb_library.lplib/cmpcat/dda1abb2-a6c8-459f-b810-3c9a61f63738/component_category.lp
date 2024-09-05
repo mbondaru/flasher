@@ -1,0 +1,10 @@
+(librepcb_component_category dda1abb2-a6c8-459f-b810-3c9a61f63738
+ (name "Transistor")
+ (description "")
+ (keywords "")
+ (author "bim bom")
+ (version "0.1")
+ (created 2024-07-23T08:33:00Z)
+ (deprecated false)
+ (parent none)
+)

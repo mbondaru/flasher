@@ -1,0 +1,10 @@
+(librepcb_package_category 53219fbf-99cc-4c1a-8239-352d201c850e
+ (name "IC")
+ (description "")
+ (keywords "")
+ (author "bim bom")
+ (version "0.1")
+ (created 2024-07-23T11:21:01Z)
+ (deprecated false)
+ (parent none)
+)
