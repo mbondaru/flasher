@@ -45,6 +45,9 @@
  (net 11565150-8609-472e-96ef-e7c4f063663a (auto false) (name "P32_3V3")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
+ (net 122981dd-ae1b-4e48-a0f1-bf5cfe9a0e0c (auto false) (name "FLASH_RESET#")
+  (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
+ )
  (net 128b783e-eb69-49f1-8e95-fb6e35d3ed1b (auto false) (name "SW2")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
@@ -207,6 +210,9 @@
  (net 52b50e34-9ba9-41c5-8584-73c7a6b61c26 (auto false) (name "P54_1V8")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
+ (net 53cb1bbc-3882-4e4c-95f2-002fef6effb9 (auto true) (name "N1")
+  (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
+ )
  (net 53db7657-f5ca-4f8d-a83b-e1ed2813c468 (auto false) (name "P7_1V8")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
@@ -297,6 +303,9 @@
  (net 7b084d70-36f9-443b-a692-1229d063133d (auto false) (name "P2_1V8")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
+ (net 7cadfc06-18b9-4bf3-939f-d04b330c3dd0 (auto false) (name "DONE_LED")
+  (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
+ )
  (net 7d597fb3-27c5-4ce2-8b5b-714b3876d0ba (auto false) (name "P51_1V8")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
@@ -313,6 +322,9 @@
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
  (net 8a644ac1-2ee8-4dcc-bff0-beb191a8d1f4 (auto false) (name "P14_3V3")
+  (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
+ )
+ (net 8a6561a2-a404-45fb-bfc2-d496c801ff00 (auto true) (name "N2")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
  (net 8a830382-39e9-40d3-be1d-915b33594733 (auto false) (name "P52_1V8")
@@ -564,6 +576,18 @@
  (net fa614ffb-14f0-47d2-8d69-c0743f1515e0 (auto false) (name "VCC3V3")
   (netclass 5f9896ef-5a88-490c-b144-26c3ac9bb320)
  )
+ (component 03e536d5-fc3f-4b65-9820-b7d0d036a156
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R24") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "100"))
+  (device a6a6744d-7d3b-450a-b782-feca43939ca5
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 005eb082-6a0c-4a4d-96ca-3b1aaeb4b0a1))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 4baf4247-adf3-4b3b-bae6-ebf3822af10d))
+ )
  (component 0428253e-8a43-4c06-8f7a-5450cb02b3e9
   (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
   (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
@@ -587,6 +611,13 @@
   (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
   (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
   (name "GND25") (value "GND")
+  (lock_assembly false)
+  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component 0a3b1515-db29-48c3-810b-53bc4e925bc3
+  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
+  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
+  (name "GND42") (value "GND")
   (lock_assembly false)
   (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net e73c5654-9331-46a7-b8f3-f423198c3792))
  )
@@ -1377,6 +1408,18 @@
   (signal e8852863-c994-4a23-8b2c-d88e7f88cb4a (net fa02d1d1-3021-4229-a5d6-d9c171748ad0))
   (signal fe83d16a-6a26-4a7c-a3bb-65f1c90f1157 (net 6e1973ab-82d0-432f-9793-6c51208dc782))
  )
+ (component 10239296-c0b4-42e6-a14e-05cc8ee79ba6
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R23") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "100"))
+  (device a6a6744d-7d3b-450a-b782-feca43939ca5
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 7cadfc06-18b9-4bf3-939f-d04b330c3dd0))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 13c40cae-f9bd-464e-a308-70893133a5a4))
+ )
  (component 1124dfd9-f7c8-4b13-914a-7e698f3d24b0
   (lib_component 0b422bc6-a3fc-4e75-8bf2-76e38a2b3d2a)
   (lib_variant d7e4ea46-210e-4af7-8cb4-615463db939a)
@@ -1527,9 +1570,6 @@
   (lock_assembly false)
   (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "9.31"))
   (attribute "TOLERANCE" (type string) (unit none) (value "1%"))
-  (device 324de04a-f2ac-4134-b8bf-914173c150bf
-   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
-  )
   (device 483a71eb-318e-448e-82ff-f02efc4821aa
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
@@ -1567,6 +1607,18 @@
   (name "GND35") (value "GND")
   (lock_assembly false)
   (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component 1b513499-ac17-4002-bd8d-b9c3d496d3a5
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R35") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "100"))
+  (device a6a6744d-7d3b-450a-b782-feca43939ca5
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 7886cf62-8f39-4bec-9b51-60449eb3ee75))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 005eb082-6a0c-4a4d-96ca-3b1aaeb4b0a1))
  )
  (component 1bddabbf-4c35-4ab4-a2b6-ff375afb6d72
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -1622,6 +1674,18 @@
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 519c7660-cfdc-41bc-949b-e419797f453f))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component 1ed97967-d55f-402c-b80f-08f85455e5b7
+  (lib_component 5d990755-657c-4ece-af5d-ea44dc3fe8ca)
+  (lib_variant 4309b548-5e49-46fa-8d6c-2130c14de0b5)
+  (name "T2") (value "{{MPN or DEVICE or COMPONENT}}")
+  (lock_assembly false)
+  (device 380456dd-ce61-4c8f-9a74-e792aeb3f319
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 24abbb22-30b6-474b-aa73-c8009be5d40e (net e73c5654-9331-46a7-b8f3-f423198c3792))
+  (signal ecf2406a-b803-44c2-a2b0-b49cd017319e (net 53cb1bbc-3882-4e4c-95f2-002fef6effb9))
+  (signal f419e0f0-d691-4a3a-b667-18f7014eb9ce (net 8a6561a2-a404-45fb-bfc2-d496c801ff00))
  )
  (component 1efb107a-2c62-4e9d-ae66-e8d459a80629
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -1710,7 +1774,7 @@
   )
   (signal 15e4e2b2-79f5-4308-8d9f-1d08284883ed (net none))
   (signal 3cf90a70-3aea-4a6e-8836-8fd49e240ef6 (net 4baf4247-adf3-4b3b-bae6-ebf3822af10d))
-  (signal 50fb7efe-c7c7-487b-8e9a-371f715f91be (net none))
+  (signal 50fb7efe-c7c7-487b-8e9a-371f715f91be (net 122981dd-ae1b-4e48-a0f1-bf5cfe9a0e0c))
   (signal 7e63409c-39bc-4267-ab21-220c64389d51 (net none))
   (signal 8f548d74-71a4-4ce8-a045-a3411069201e (net e0ad4567-630b-444e-b928-75149a909cc4))
   (signal a1816afb-e9f4-4dd3-b18d-8e95bcd82488 (net none))
@@ -1926,6 +1990,18 @@
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 6e1973ab-82d0-432f-9793-6c51208dc782))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
  )
+ (component 3b8e417a-2389-4c77-bf7d-43fe634e641e
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R6") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "10"))
+  (device 5ff4a2e5-3593-49ab-bdbe-f9b68015a3ed
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 8a6561a2-a404-45fb-bfc2-d496c801ff00))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 2f5b3cb3-9c65-4086-bda6-12ce19c25905))
+ )
  (component 3f000e7b-45ec-454d-9387-a1837e72f2ff
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
   (lib_variant 8cd7b37f-e5fa-4af5-a8dd-d78830bba3af)
@@ -2081,6 +2157,18 @@
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net cefcfadd-bf9a-4a4d-bfa0-3c9140bf6e18))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net 128b783e-eb69-49f1-8e95-fb6e35d3ed1b))
  )
+ (component 4cb4f281-33c0-4a42-b7da-4b779a5ba7fb
+  (lib_component 5d990755-657c-4ece-af5d-ea44dc3fe8ca)
+  (lib_variant 4309b548-5e49-46fa-8d6c-2130c14de0b5)
+  (name "T4") (value "{{MPN or DEVICE or COMPONENT}}")
+  (lock_assembly false)
+  (device 380456dd-ce61-4c8f-9a74-e792aeb3f319
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 24abbb22-30b6-474b-aa73-c8009be5d40e (net e73c5654-9331-46a7-b8f3-f423198c3792))
+  (signal ecf2406a-b803-44c2-a2b0-b49cd017319e (net 8a6561a2-a404-45fb-bfc2-d496c801ff00))
+  (signal f419e0f0-d691-4a3a-b667-18f7014eb9ce (net 9a2e0705-438c-4ba0-8d6e-d7cb67e7d27b))
+ )
  (component 4ec8870c-a8ae-450f-a7e7-a851fd2d771d
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
   (lib_variant 8cd7b37f-e5fa-4af5-a8dd-d78830bba3af)
@@ -2142,6 +2230,18 @@
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 519c7660-cfdc-41bc-949b-e419797f453f))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component 557bc89e-23d5-4a00-9099-ac53c8072b2c
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R22") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "10"))
+  (device 5ff4a2e5-3593-49ab-bdbe-f9b68015a3ed
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net e73c5654-9331-46a7-b8f3-f423198c3792))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 8a6561a2-a404-45fb-bfc2-d496c801ff00))
  )
  (component 5626c7ea-d6ed-488d-b532-2441c4f747cb
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -2361,6 +2461,19 @@
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net e73c5654-9331-46a7-b8f3-f423198c3792))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 615bfd92-4bf2-401c-b5c8-d537d7e6b42b))
  )
+ (component 6f42084a-9fe0-4a7a-9b1c-30745de38b32
+  (lib_component 2b24b18d-bd95-4fb4-8fe6-bce1d020ead4)
+  (lib_variant ed0f0ca2-43ff-4a10-94c2-2958bc336586)
+  (name "LED2") (value "{{MPN or COLOR}}")
+  (lock_assembly false)
+  (attribute "COLOR" (type string) (unit none) (value ""))
+  (device acdcf8bb-42eb-498c-b04c-cc10f9450873
+   (attribute "COLOR" (type string) (unit none) (value ""))
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 7b023430-b68f-403a-80b8-c7deb12e7a0c (net e73c5654-9331-46a7-b8f3-f423198c3792))
+  (signal f1467b5c-cc7d-44b4-8076-d729f35b3a6a (net 7cadfc06-18b9-4bf3-939f-d04b330c3dd0))
+ )
  (component 6f7104c8-cf9d-4c23-9c2f-51ce970c15d5
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
   (lib_variant 8cd7b37f-e5fa-4af5-a8dd-d78830bba3af)
@@ -2482,7 +2595,7 @@
   (name "C39") (value "{{CAPACITANCE}}")
   (lock_assembly false)
   (attribute "CAPACITANCE" (type capacitance) (unit microfarad) (value "0.1"))
-  (device 2704f5e1-f8c2-4565-b8bd-5a7ea9946f08
+  (device e80a2ba5-13dd-41f2-9cdc-f29e30a9e2ed
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 519c7660-cfdc-41bc-949b-e419797f453f))
@@ -2523,6 +2636,13 @@
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net ab7dd769-98b7-4179-be4a-87e4bf96bc03))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component 7828b043-ed15-43f8-861f-0e3ab27aacc6
+  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
+  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
+  (name "GND43") (value "GND")
+  (lock_assembly false)
+  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net e73c5654-9331-46a7-b8f3-f423198c3792))
  )
  (component 78f0cda9-bf6b-44fc-979c-7b6a72e6d050
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -2610,8 +2730,8 @@
   (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
   (name "R27") (value "{{RESISTANCE}}")
   (lock_assembly false)
-  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "3389"))
-  (device 483a71eb-318e-448e-82ff-f02efc4821aa
+  (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "14.5"))
+  (device 078650d3-483c-4b9e-a848-b14f1aad2edc
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 0e4609bd-3e7a-4ad7-b1ec-55512a1d18ea))
@@ -2697,7 +2817,7 @@
   (device d0691a38-acb7-4a41-b889-99d7a2f92b10
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
-  (device 2704f5e1-f8c2-4565-b8bd-5a7ea9946f08
+  (device e80a2ba5-13dd-41f2-9cdc-f29e30a9e2ed
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 8d1064c7-92a6-4d09-9393-dc866ba52f35))
@@ -2826,7 +2946,7 @@
   (name "C38") (value "{{CAPACITANCE}}")
   (lock_assembly false)
   (attribute "CAPACITANCE" (type capacitance) (unit microfarad) (value "0.1"))
-  (device 2704f5e1-f8c2-4565-b8bd-5a7ea9946f08
+  (device e80a2ba5-13dd-41f2-9cdc-f29e30a9e2ed
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net fa614ffb-14f0-47d2-8d69-c0743f1515e0))
@@ -2958,6 +3078,18 @@
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 80f1e03b-34b9-410f-a770-a825784a7a12))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
  )
+ (component bd537860-c194-4639-86b5-6ce92307052a
+  (lib_component 5d990755-657c-4ece-af5d-ea44dc3fe8ca)
+  (lib_variant 4309b548-5e49-46fa-8d6c-2130c14de0b5)
+  (name "T1") (value "{{MPN or DEVICE or COMPONENT}}")
+  (lock_assembly false)
+  (device 380456dd-ce61-4c8f-9a74-e792aeb3f319
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 24abbb22-30b6-474b-aa73-c8009be5d40e (net 7886cf62-8f39-4bec-9b51-60449eb3ee75))
+  (signal ecf2406a-b803-44c2-a2b0-b49cd017319e (net 122981dd-ae1b-4e48-a0f1-bf5cfe9a0e0c))
+  (signal f419e0f0-d691-4a3a-b667-18f7014eb9ce (net 13c40cae-f9bd-464e-a308-70893133a5a4))
+ )
  (component bd7da4e2-6e27-4130-82e6-ff14300773a6
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
   (lib_variant 8cd7b37f-e5fa-4af5-a8dd-d78830bba3af)
@@ -3026,12 +3158,24 @@
   (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
   (name "R34") (value "{{RESISTANCE}}")
   (lock_assembly false)
-  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "330"))
-  (device 58678317-f386-416d-890a-470f59ab3fba
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "200"))
+  (device a6a6744d-7d3b-450a-b782-feca43939ca5
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 13c40cae-f9bd-464e-a308-70893133a5a4))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net fa614ffb-14f0-47d2-8d69-c0743f1515e0))
+ )
+ (component c7e96658-d321-4f8d-b619-69b709baa891
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R1") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "4.7"))
+  (device 58678317-f386-416d-890a-470f59ab3fba
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 122981dd-ae1b-4e48-a0f1-bf5cfe9a0e0c))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 4baf4247-adf3-4b3b-bae6-ebf3822af10d))
  )
  (component c815ad80-5422-4542-b539-8bb280229e06
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -3169,6 +3313,19 @@
   )
   (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net fa614ffb-14f0-47d2-8d69-c0743f1515e0))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net e73c5654-9331-46a7-b8f3-f423198c3792))
+ )
+ (component d957b6db-652c-41a9-8c86-1334bf4bb9cb
+  (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
+  (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
+  (name "R2") (value "{{RESISTANCE}}")
+  (lock_assembly false)
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "100"))
+  (attribute "RATING" (type power) (unit watt) (value "0.25"))
+  (device a6a6744d-7d3b-450a-b782-feca43939ca5
+   (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
+  )
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 53cb1bbc-3882-4e4c-95f2-002fef6effb9))
+  (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net fa614ffb-14f0-47d2-8d69-c0743f1515e0))
  )
  (component d97e9f2d-eb53-4ec5-ad72-64470894bf3c
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
@@ -3331,6 +3488,7 @@
   (name "R20") (value "{{RESISTANCE}}")
   (lock_assembly false)
   (attribute "RESISTANCE" (type resistance) (unit ohm) (value "680"))
+  (attribute "RATING" (type power) (unit watt) (value "0.5"))
   (device 58678317-f386-416d-890a-470f59ab3fba
    (variant cfe97039-3b0a-47b7-b9bd-613bdf93e776)
   )
@@ -3440,15 +3598,15 @@
   (signal 507ceed8-c603-409d-9567-1d83871bbdc8 (net 4d1c46a2-49c8-4f63-b61f-773e5343df4f))
   (signal 62e228e5-650d-4af0-a9aa-a5b1f26d870e (net a746b1c1-890a-47ba-920c-eb96aa74dbfb))
   (signal 6461d6b5-1d46-4f7c-bb5f-b0f1e5e38b53 (net 67c08c2a-64dd-42ff-a9d0-7ed6a91c67e6))
-  (signal 65f5bbad-6a9b-4e72-bd02-cd72c8d4d6b4 (net 15a70c98-e4a9-4186-82f4-c9df264c9034))
+  (signal 65f5bbad-6a9b-4e72-bd02-cd72c8d4d6b4 (net a69202d1-6c99-4142-8980-2732c5acb754))
   (signal 79521ce6-484b-45f4-8ec6-3b77187b510b (net 8f89f36e-3554-4e50-b798-e9529e2e0779))
   (signal 7a08e55b-6664-473b-a0ff-e2d8b689829d (net e863dd41-0706-410b-8345-64f94e74bdb4))
   (signal 7a47a841-311d-499d-9d69-750a3cf3bd5a (net f9e9afc2-504e-4585-877a-adc7aac4d0f3))
   (signal 806556b6-f560-42f3-80e6-96c412c75693 (net e6b3e0bb-e241-48a5-a09c-5ac1f72d65ad))
   (signal 89bb5f9d-6b64-4d2d-ba74-7429b5517e3a (net 5fb4c328-ac78-4211-a876-2607d5dbb923))
-  (signal 8bd9d5e4-90e9-473c-9a8c-6a9cc2c59dd7 (net 381936c4-8cc9-49dc-8b52-9a18202f2449))
+  (signal 8bd9d5e4-90e9-473c-9a8c-6a9cc2c59dd7 (net 15a70c98-e4a9-4186-82f4-c9df264c9034))
   (signal b60b9384-f131-4d36-8c13-38250227a280 (net 8a644ac1-2ee8-4dcc-bff0-beb191a8d1f4))
-  (signal c11dd681-49ca-4733-86fc-0788a54858f1 (net a69202d1-6c99-4142-8980-2732c5acb754))
+  (signal c11dd681-49ca-4733-86fc-0788a54858f1 (net 381936c4-8cc9-49dc-8b52-9a18202f2449))
   (signal c582a793-8430-485d-a564-515ae25d7343 (net 1da968b0-b316-4181-9f9a-42fc11de1dc9))
   (signal d85c0a5a-1cbd-4932-a8a5-bcc34428442e (net 334b33ad-eef6-4798-86ab-5903090805a5))
   (signal dcbe4abd-1cf9-44de-aefa-672b1628173a (net edddef4a-5545-4647-823d-402bf74c98cb))

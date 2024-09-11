@@ -1,0 +1,38 @@
+M48
+; #@! TF.GenerationSoftware,LibrePCB,LibrePCB,1.1.0
+; #@! TF.CreationDate,2024-09-08T17:15:58
+; #@! TF.ProjectId,flasher,f4b07f79-14a2-4070-9d7d-1f686dcb10c4,v1
+; #@! TF.Part,Single
+; #@! TF.SameCoordinates
+; #@! TF.FileFunction,Plated,1,13,PTH
+FMAT,2
+METRIC,TZ
+; #@! TA.AperFunction,ViaDrill
+T1C0.2
+%
+G90
+G05
+M71
+T1
+X27.4Y-20.5
+X28.1Y-20.5
+X-5.503Y-15.68
+X27.4Y-21.2
+X-4.803Y-14.98
+X-4.803Y-15.68
+X-4.803Y-23.47
+X28.1Y-21.2
+X5.02Y-33.833
+X-4.803Y-22.57
+X-4.103Y-15.68
+X-5.503Y-23.47
+X-4.103Y-14.98
+X-5.503Y-22.57
+X-8.718Y-28.933
+X-4.103Y-22.57
+X26.7Y-21.2
+X-5.503Y-14.98
+X-4.103Y-23.47
+X26.7Y-20.5
+T0
+M30
